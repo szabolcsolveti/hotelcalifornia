@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel California</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bg-header {
+  background-position: center;
+  background-size: cover;
+  background-image: url("background.jpg");
+  min-height: 80%;
+  text-align: center;
+}
+
+h5{
+	text-align: center;
+	padding: 12px;
+	border-style:solid;
+    width: 10em;
+	margin: auto;
+	margin-top:30px;
+	margin-bottom:20px;
+	display; block;
+	font-size:25px;
+
+}
+p{
+	text-align: justify;
+}
+
+.footer-content{
+	background-color:#f0f5f5;
+	padding: 15px;
+}
+
+#about{
+	text-align:center;
+}
+h1{
+	margin-top:0px;
+	font-weight: bold;
+	color:white;
+	font-size:90px;
+
+}
+.about-container{
+	width:500px;
+	margin:auto;
+}
+.about {
+    padding: 30px 0	
+}
+
+.about .img {
+    width: 75%;
+	margin-left:35px;
+}
+
+.about .img img{
+    width: 100%;
+    height: auto;
+}
+
+.about .szoveg {
+    width: 80%
+}
+
+#about{
+margin-top:200px;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+
+
+<header class="bg-header" id="home">
+    <h1>HOTEL<br>CALIFORNIA</h1>
+</header>
+
+
+<div class="about-container">
+  <div class="about-content" style="max-width:700px">
+    <h5><b>A HOTELRŐL</b></h5>
+	</div>
+    <p>Modo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputat.</p>
+    <p>Modo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputat.</p>
+  </div>
+</div>
+
+<div class="about" id="about">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="img"><img src="1.jpg"></div>
+                </div>
+                <div class="col-lg-6 col-12 text-right">
+                    <div class="szoveg">
+                        <h5>Foglaljon most!</h5>
+                        <p style="text-align:center"><b>Ne hagyja ki a legkedvezőbb ajánlatainkat!</b></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscin ullamco laboris nisi ut aliquip ex ea commodo consequdolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </p>
+						<label>Személyek Száma:</label>
+						<select id="szam" onchange="frissitsdASzemelyeket()">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						<select>
+						<br>
+						<label>Napok száma:</label>
+						<select id="days" onchange="frissitsdASzemelyeket()">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>	
+						
+						<h2 id="szemelyek"></h2>
+						<form action="https://fidesz.hu/">
+						<input type="submit" value="Foglalás" >
+						</form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<footer class="footer-content">
+
+            <div class="contact-child">
+                <div class="container">
+                        <div class="col-lg-6 col-12">
+						<h2>Kérdése van?</h2>
+                            <div class="contact-form">
+                                <form>
+                                    <input type="text" placeholder="Név">
+                                    <input type="text" placeholder="Telefonszám">
+                                    <input type="email" placeholder="E-mail">
+                                    <textarea placeholder="Üzenet"></textarea>
+									
+									
+                                </form>
+								<form action="https://fidesz.hu/">
+                                    <input type="submit" value="Küldés">
+									</form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <p style="font-size:15px">Copyright© Hotel California </a></p>
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
